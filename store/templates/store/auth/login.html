@@ -1,0 +1,47 @@
+{% extends 'store/layouts/main.html' %}
+
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="">
+                <div class="card mt-3 shadow ">
+                    <div class="card-body">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="text-center">
+                                <h4> Register form in Django</h4>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label fro="">Username :</label>
+                                <input type="text" name="username" class= "form-control my-2" placeholder= "Enter username ">
+                                
+
+                            </div>
+                            
+                           
+                            <div class="form-group">
+                                <label fro="">Password :</label>
+                                <input type="Password" name="password" class= "form-control my-2" placeholder= "Enter password ">
+                            </div>
+                            
+                            
+                            <button type="submit" class="btn float-end shadow btn-success px-4">login</button>
+                        </form>
+                    </div>    
+                </div> 
+            </div> 
+        </div> 
+    </div>         
+</div> 
+
+
+
+
+
+
+{% endblock content %}
